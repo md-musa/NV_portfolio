@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .common-btn {
+    @apply h-11 w-full border-2 border-r-0 border-[#1185afef] rounded-2xl md:rounded-none md:rounded-l-2xl bg-[#1186af] hover:bg-[#00796bd7] text-white focus:right-1 transition-all;
+  }
+  .selected-btn {
+    @apply h-11 w-full border-2 border-r-0 border-gray-500 rounded-2xl md:rounded-none md:rounded-l-2xl bg-white focus:right-1;
+  }
+}
+
+body {
+  @apply bg-[#efefef] transition-all;
+}
+* {
+  font-family: 'Inter', sans-serif !important;
+  font-optical-sizing: auto;
+}
+
+.vertical-line::after {
+  content: '';
+  display: block;
+  border-left: 2px solid rgb(62, 62, 62); /* Adjust thickness and color as needed */
+  height: 130px; /* Adjust height as needed */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #edf2f7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bac7d4;
+  border-radius: 100vh;
+  border: 3px solid #edf2f7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+/* * {
+  border: solid 2px rgb(242, 125, 125);
+} */
